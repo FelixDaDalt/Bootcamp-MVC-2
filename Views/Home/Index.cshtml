@@ -1,0 +1,16 @@
+﻿@model Config;
+@{
+    ViewData["Title"] = "Listado Vehiculos";
+}
+
+<body class="text-center">
+    <div>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">@Model.Nombre</h1>
+        <p class="lead">@Model.Descripcion</p>
+        <p class="lead">
+          <a href="Home/Unidades" class="btn btn-lg btn-secondary">Ver Unidades</a>
+        </p>
+      </main>
+    </div>
+</body>

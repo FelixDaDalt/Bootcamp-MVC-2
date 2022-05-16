@@ -1,0 +1,30 @@
+﻿@model List<vehiculos>;
+@{
+    ViewData["Title"] = "Listado Vehiculos";
+}
+
+<table class="table">
+  <caption>Listado de Autos</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Año</th>
+      <th scope="col">Kilometros</th>
+      <th scope="col">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var value in Model)
+    {<tr>
+        <th scope="row">@value.Id</th>
+        <td>@value.marca</td>
+        <td>@value.modelo</td>
+        <td>@value.año</td>
+        <td>@value.kilometro</td>
+         <td>@value.precio</td>
+     </tr>
+    }
+  </tbody>
+</table>
